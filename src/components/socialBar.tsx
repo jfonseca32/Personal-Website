@@ -1,7 +1,6 @@
 import {
   TbBrandLinkedin,
   TbBrandGithub,
-  TbBrandInstagram,
   TbMail,
 } from "react-icons/tb";
 
