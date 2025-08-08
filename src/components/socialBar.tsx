@@ -9,7 +9,7 @@ export default function SocialBar() {
   return (
     <div className="mt-2 flex">
       <a
-        href="https://www.linkedin.com/in/danny-hagenlocker"
+        href="https://www.linkedin.com/in/joao-pedro-dudziak-fonseca"
         target="_blank"
         rel="noopener noreferrer"
         className="basis-10"
@@ -17,7 +17,7 @@ export default function SocialBar() {
         <TbBrandLinkedin className="h-6 w-6 transition-colors hover:text-slate-200" />
       </a>
       <a
-        href="https://github.com/dannyhagenlocker"
+        href="https://github.com/jfonseca32"
         target="_blank"
         rel="noopener noreferrer"
         className="basis-10"
@@ -25,15 +25,7 @@ export default function SocialBar() {
         <TbBrandGithub className="h-6 w-6 transition-colors hover:text-slate-200" />
       </a>
       <a
-        href="https://www.instagram.com/dannyhagenlocker/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="basis-10"
-      >
-        <TbBrandInstagram className="h-6 w-6 transition-colors hover:text-slate-200" />
-      </a>
-      <a
-        href="mailto:dhagenlo@stanford.edu"
+        href="mailto:jfonseca32@gatech.edu"
         target="_blank"
         rel="noopener noreferrer"
         className="basis-10"
