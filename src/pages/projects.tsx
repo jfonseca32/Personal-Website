@@ -36,7 +36,7 @@ export default function ProjectsPage() {
           description="My very own personal website."
           image="projects/website/cover.png"
           tags={["Personal", "Software"]}
-          xlink="JoaoPedroDudziakFonseca.com"
+          xlink="https://jfonseca32.github.io/Personal-Website/"
         />
       </div>
     </div>
