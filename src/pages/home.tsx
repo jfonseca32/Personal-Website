@@ -1,10 +1,10 @@
 import Lanyard from "../components/lanyard";
 import Hero from "../components/sections/hero";
 import Infograph from "../components/sections/infograph";
-import { DocumentTitle } from "../utils/utils";
+import { useDocumentTitle } from "../utils/utils";
 
 export default function Home() {
-  DocumentTitle("Home | Joao Pedro Dudziak Fonseca");
+  useDocumentTitle("Home | Joao Pedro Dudziak Fonseca");
   return (
     <div className="mx-auto min-h-screen max-w-screen-xl px-6 md:px-12 lg:px-24">
       <div className="fixed inset-0 hidden max-h-screen md:block">
