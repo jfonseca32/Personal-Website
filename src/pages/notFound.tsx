@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
-import { DocumentTitle } from "../utils/utils";
+import { useDocumentTitle } from "../utils/utils";
 
 export default function NotFound() {
   const navigate = useNavigate();
-  DocumentTitle("404: This page is not found");
+  useDocumentTitle("404: This page is not found");
 
   return (
     <div className="mx-auto flex min-h-screen max-w-screen-xl flex-col items-center justify-center px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
