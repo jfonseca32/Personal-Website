@@ -4,7 +4,6 @@ import { useLocation, useNavigate } from "react-router-dom";
 const tabs = [
   { name: "Home", path: "/" },
   { name: "Projects", path: "/projects" },
-  { name: "Life", path: "/life" },
 ];
 
 export default function TabSwitcher() {
