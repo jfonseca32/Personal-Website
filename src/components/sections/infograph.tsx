@@ -43,17 +43,17 @@ function AboutMe() {
   return (
     <>
       <p>
-        Hey, glad you’re here! My name is Danny and I am a freshman at&nbsp;
+        Hey, glad you’re here! My name is JP and I am a Senior at&nbsp;
         <a
           className="font-medium text-slate-200 hover:text-red-500 focus-visible:text-red-500"
           rel="noopener noreferrer"
           target="_blank"
           href="https://www.stanford.edu/"
         >
-          Stanford University&nbsp;
+          Georgia Tech&nbsp;
         </a>
-        studying Electrical Engineering and Computer Science. Broadly speaking,
-        I am interested in startups, robotics, machine learning, and sustainable
+        studying Mechanical Engineering and Computer Science. Broadly speaking,
+        I am interested in mechanical design, robotics, machine learning, and sustainable
         tech.
       </p>
     </>
@@ -64,81 +64,80 @@ function Experience() {
   return (
     <>
       <ExperienceCard
-        title="Summer Fellows Grant Recipient"
-        company="Y Combinator"
+        title="Undergraduate Researcher"
+        company="The Bhamla Lab"
         tags={[
-          "Startup",
-          "Software",
-          "Music Technology",
+          "Research",
+          "Fluid Mechanics",
+          "Simulations",
           "Artificial Intelligence",
-          "LLM's",
+          "Design and Manufacturing",
         ]}
-        dates="Jun 2025 - Sep 2025"
-        description="20k to build something great, more coming soon..."
-        image="logos/yc_logo.png"
-        xlink="https://www.ycombinator.com/"
+        dates="May 2025 - Present"
+        description="squid-inspired soft nozzle to improve underwater vehicle efficiency (η > 80%)"
+        image="logos/bhamla_lab_logo.png"
+        xlink="assets/Bhamla Lab Squid Project June Presentation.pdf"
       />
       <ExperienceCard
-        title="Software Development Engineer Intern"
-        company="Amazon"
+        title="Inverse Kinematics Approximation with Machine Learning"
+        company="Georgia Tech"
         tags={[
-          "Software Development",
-          "Java",
+          "Robotic Manipulation",
+          "Python",
           "Machine Learning",
           "Git",
           "Teamwork",
         ]}
-        dates="Jun 2025 - Sep 2025"
-        description="GenAI content for influencers and storefronts @ SEA70"
-        image="logos/amazon_logo.png"
-        xlink="https://www.amazon.com/"
+        dates="May 2025 - Sep 2025"
+        description="Machine Learning pipeline for approximating joint angles of redundant robot arms"
+        image="logos/IK_ML_logo.png"
+        xlink="https://jfonseca32.github.io/Inverse-Kinematics-Approximation-with-ML/"
       />
       <ExperienceCard
-        title="Research Assistant"
-        company="Stanford ARMLab"
+        title="Equipment Engineering Intern (2 Rotations"
+        company="The Coca-Cola Company"
         tags={[
-          "ROS",
-          "Software Development",
-          "Mixed Reality",
-          "Robotic Manipulation",
-          "Imitation Learning",
+          "Mechanical Engineering",
+          "Quality Assurance",
+          "Rapid Prototyping",
+          "Experimental Design",
+          "Global Impact",
         ]}
-        dates="Jan 2025 - Jun 2025"
-        description="Mixed Reality teleoperation of robotic arms for imitation learning"
-        image="logos/stanford_engineering_logo.jpeg"
-        xlink="https://arm.stanford.edu/"
+        dates="May 2023 - Aug 2023, Jan 2024 - May 2024"
+        description="Improvement and validation of new vending technologies and methods"
+        image="logos/coca_cola_logo.jpeg"
+        xlink="https://www.coca-cola.com/us/en"
       />
       <ExperienceCard
-        title="ML Research Intern"
-        company="NASA + UT Austin"
+        title="Aerodynamics Engineer"
+        company="FSAE HyTech Racing"
         tags={[
-          "Python",
-          "Machine Learning",
-          "Data Parsing/Automation",
-          "Climate Science",
-          "Remote Sensing",
-          "Jupyter",
+          "CATIA/SolidWorks",
+          "Ansys Simulation",
+          "Wind Tunnels",
+          "Aerodynamics Design",
+          "Chassis Design",
+          "FEA",
         ]}
-        dates="Jun 2022 - Aug 2022"
-        description="LSTM RNN trained on satellite data for water loss prediction"
-        image="logos/nasa_logo.png"
-        xlink="https://www.youtube.com/watch?v=7xi6A9HeBX8"
+        dates="Sep 2022 - Present"
+        description="Design and validation of chassis and aerodynamic components of the car"
+        image="logos/hytech_racing_logo.png"
+        xlink="https://hytechracing.gatech.edu/"
       />
       <ExperienceCard
-        title="Alumni Mentor (Former Team President)"
-        company="FIRST Robotics"
+        title="Production Engineering Intern"
+        company="Sorvetes Rochinha (Ice-Cream Company)"
         tags={[
-          "Java",
-          "Physics Simulation",
-          "Git",
-          "Motion Control",
-          "Path Planning",
+          "Industrial Engineering",
+          "Process Mapping and Automation",
+          "Quality Assurance",
+          "People Management",
           "3D-Modeling",
         ]}
-        dates="Jan 2022 - Present"
-        description="Led team in designing/programming robots for FRC World Championship, helped grow team from 20 to 45 students"
-        image="logos/first_logo.png"
-        xlink="https://github.com/BBR8ERS-FRC-TEAM5557"
+        dates="May 2022 - Aug 2022"
+        description="Implemented ISO9000 standards and automated processes to increase production"
+        image="logos/rochinha_logo.png"
+        xlink="https://sorvetesrochinha.com.br/"
       />
     </>
   );
