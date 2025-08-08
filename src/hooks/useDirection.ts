@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 
-const tabPaths = ["/", "/projects", "/life"];
+const tabPaths = ["/", "/projects"];
 
 export function useTransitionDirection() {
   const location = useLocation();
