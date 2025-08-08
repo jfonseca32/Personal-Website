@@ -1,12 +1,10 @@
 import { useState } from "react";
-import tori from "../assets/jackbox/IMG_0841.png";
-import golf from "../assets/jackbox/IMG_3593.png";
-import me from "../assets/jackbox/IMG_1955.jpg";
-import logo from "../assets/logos/danny_logo.png";
+import me from "../assets/jackbox/IMG_2166.jpg";
+import logo from "../assets/logos/JPDFlogo.png";
 
 export default function ImageJackbox() {
   // Array of image URLs with different sizes to make changes visible
-  const images = [logo, tori, golf, me];
+  const images = [logo, me];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
