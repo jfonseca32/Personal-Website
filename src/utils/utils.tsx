@@ -6,9 +6,9 @@ export { getImageUrl };
 
 import { useEffect } from "react";
 
-function DocumentTitle(title: string) {
+function useDocumentTitle(title: string) {
   useEffect(() => {
     document.title = title;
   }, [title]);
 }
-export { DocumentTitle };
+export { useDocumentTitle };
