@@ -1,10 +1,10 @@
 import { useNavigate } from "react-router-dom";
-import { DocumentTitle } from "../utils/utils";
+import { useDocumentTitle } from "../utils/utils";
 import "../components/loader.css";
 
 export default function UnderConstruction() {
   const navigate = useNavigate();
-  DocumentTitle("🚧 This page is under construction 🚧");
+  useDocumentTitle("🚧 This page is under construction 🚧");
 
   return (
     <div className="mx-auto flex min-h-screen max-w-screen-xl flex-col items-center justify-center px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
