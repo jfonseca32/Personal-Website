@@ -123,7 +123,7 @@ function Experience() {
           "FEA",
         ]}
         dates="Sep 2022 - Present"
-        description="Design and validate aerodynamic and chassis components, contributing to performance and manufacturability improvements."
+        description="Design and validate aerodynamic and chassis components, contributing to performance and manufacturability of car."
         image="logos/hytech_logo.png"
         xlink="https://hytechracing.gatech.edu/"
       />
