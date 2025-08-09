@@ -45,7 +45,7 @@ function AboutMe() {
       <p>
         Hey, glad you’re here! My name is Joao Pedro and I am a Senior at&nbsp;
         <a
-          className="font-medium text-slate-200 hover:text-yellow-700 focus-visible:text-yellow-700"
+          className="font-medium text-slate-200 hover:text-yellow-500 focus-visible:text-yellow-700"
           rel="noopener noreferrer"
           target="_blank"
           href="https://www.gatech.edu/"
