@@ -35,7 +35,7 @@ export default function ProjectsPage() {
           title="My Very Own Personal Website"
           description="Designed and developed a fully responsive website using React, Tailwind CSS, and Framer Motion, featuring animated page transitions, dynamic content rendering, and custom 3D assets."
           image="projects/Website/cover.jpg"
-          tags={["React", "Typescript", "TailwindCSS" "Framer Motion", "Blender"]}
+          tags={["React", "Typescript", "TailwindCSS", "Framer Motion", "Blender"]}
           xlink="https://jpdf.netlify.app/"
         />
       </div>
