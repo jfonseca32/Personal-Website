@@ -13,28 +13,28 @@ export default function ProjectsPage() {
         <ProjectCard
           title="Inverses Kinematics with Machine Learning"
           description="Designed a machine learning framework to solve inverse kinematics (IK) for redundant/high DOF robotic arms, achieving sub-degree accuracy and sub-ms inference in predicted joint angles."
-          image="projects/IK-ML/cover.jpg"
+          image="projects/IK-ML/cover.png"
           tags={["Machine Learning", "Robotic Manipulation", "Teamwork", "Git", "Award Winning"]}
           xlink="https://jfonseca32.github.io/Inverse-Kinematics-Approximation-with-ML/"
         />
         <ProjectCard
           title="Robotic Backpack to Follow Me to Class"
           description="Currently designing and prototyping a 'robot backpack' that follows user using YOLO-based person tracking and obstacle avoidance on a Raspberry Pi."
-          image="projects/RoboBackpack/cover.jpg"
+          image="projects/RoboBackpack/cover.png"
           tags={["Startup Idea", "DFMA", "3D Modeling", "Hardware", "Software", "Machine Learning"]}
           xlink="/under-construction"
         />
         <ProjectCard
           title="Creative Desicions and Design Challenge"
           description="Used a structured design process to design, construct, build and test an automated system for a head-to-head competition with 50+ teams (placed #2 seed)."
-          image="projects/ME2110/cover.jpg"
+          image="projects/ME2110/cover.png"
           tags={["Rapid Prototyping", "Machining", "3D Modelling", "Arduino"]}
           xlink="https://drive.google.com/file/u/0/d/1NChYIQVQt2E1Q0AGluSSGinvtOE8hyNx/view?usp=sharing&usp=embed_facebook&pli=1"
         />
         <ProjectCard
           title="My Very Own Personal Website"
           description="Designed and developed a fully responsive website using React, Tailwind CSS, and Framer Motion, featuring animated page transitions, dynamic content rendering, and custom 3D assets."
-          image="projects/Website/cover.jpg"
+          image="projects/Website/cover.png"
           tags={["React", "Typescript", "TailwindCSS", "Framer Motion", "Blender"]}
           xlink="https://jpdf.netlify.app/"
         />
