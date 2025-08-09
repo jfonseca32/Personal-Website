@@ -6,7 +6,7 @@ export default function Hero() {
     <div className="pointer-events-none z-10 flex flex-col pt-16 md:sticky md:top-0 md:max-h-screen md:basis-1/2">
       <div className="pointer-events-auto rounded-lg border border-slate-400 border-opacity-0 p-4">
         <h1 className="text-4xl font-bold tracking-tight text-slate-200 drop-shadow-md transition-all duration-300 hover:-translate-y-1 hover:text-slate-400 sm:text-5xl">
-          <a href="/">Joao Pedro Dudziak Fonseca</a>
+          <a href="/">Joao Pedro &nbsp;&nbsp;&nbsp; Dudziak Fonseca</a>
         </h1>
         <h2 className="mt-3 text-lg font-medium tracking-tight text-slate-300 sm:text-xl">
           <TypewriterComponent
