@@ -11,32 +11,32 @@ export default function ProjectsPage() {
       </h1>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <ProjectCard
-          title="Inverses Kinematics Approximation Using Machine Learning"
-          description="Designed a machine learning framework to solve inverse kinematics (IK) for redundant robotic arms, achieving sub-degree accuracy and sub-ms inference in predicted joint angles."
-          image=""
-          tags={["GT", "CS 4641", "Robotics"]}
+          title="Inverses Kinematics with Machine Learning"
+          description="Designed a machine learning framework to solve inverse kinematics (IK) for redundant/high DOF robotic arms, achieving sub-degree accuracy and sub-ms inference in predicted joint angles."
+          image="projects/IK-ML/cover.jpg"
+          tags={["Machine Learning", "Robotic Manipulation", "Teamwork", "Git", "Award Winning"]}
           xlink="https://jfonseca32.github.io/Inverse-Kinematics-Approximation-with-ML/"
         />
         <ProjectCard
-          title="RoboBackpack"
-          description="Backpack that follows user using YOLO-based person and obstacle detection on Raspberry Pi."
-          image=""
-          tags={["Stanford", "ENGR 40M", "Hardware", "Stuff"]}
+          title="Robotic Backpack to Follow Me to Class"
+          description="Currently designing and prototyping a 'robot backpack' that follows user using YOLO-based person tracking and obstacle avoidance on a Raspberry Pi."
+          image="projects/RoboBackpack/cover.jpg"
+          tags={["Startup Idea", "DFMA", "3D Modeling", "Hardware", "Software", "Machine Learning"]}
           xlink="/under-construction"
         />
         <ProjectCard
-          title="Squid-Inspired Soft Nozzles for Underwater Vehicles"
-          description="Experimental and computational research on self-designed squid-inspired soft nozzle to improve underwater vehicle efficiency by >20% beyond conventional rigid propellers (η > 80%)."
-          image=""
-          tags={["Bhamla Lab", "Research", "Computational Fluid Dynamics", "Particle Tracing Velocimetry"]}
-          xlink="/under-construction"
+          title="Creative Desicions and Design Challenge"
+          description="Used a structured design process to design, construct, build and test an automated system for a head-to-head competition with 50+ teams (placed #2 seed)."
+          image="projects/ME2110/cover.jpg"
+          tags={["Rapid Prototyping", "Machining", "3D Modelling", "Arduino"]}
+          xlink="https://drive.google.com/file/u/0/d/1NChYIQVQt2E1Q0AGluSSGinvtOE8hyNx/view?usp=sharing&usp=embed_facebook&pli=1"
         />
         <ProjectCard
-          title="JoaoPedroDudziakFonseca.com"
-          description="My very own personal website."
-          image=""
-          tags={["Personal", "Software"]}
-          xlink=""
+          title="My Very Own Personal Website"
+          description="Designed and developed a fully responsive website using React, Tailwind CSS, and Framer Motion, featuring animated page transitions, dynamic content rendering, and custom 3D assets."
+          image="projects/Website/cover.jpg"
+          tags={["React", "Typescript", "TailwindCSS" "Framer Motion", "Blender"]}
+          xlink="https://jpdf.netlify.app/"
         />
       </div>
     </div>
