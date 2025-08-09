@@ -20,7 +20,7 @@ export default function Infograph() {
         <div className="mb-8">
           <Experience />
           <div className="mt-4">
-            <Button text="View Resume" xlink="/resume.pdf" />
+            <Button text="View Resume" xlink="/JPDF-Aug25-Resume.pdf" />
           </div>
         </div>
       </div>
@@ -43,12 +43,12 @@ function AboutMe() {
   return (
     <>
       <p>
-        Hey, glad you’re here! My name is JP and I am a Senior at&nbsp;
+        Hey, glad you’re here! My name is Joao Pedro and I am a Senior at&nbsp;
         <a
-          className="font-medium text-slate-200 hover:text-red-500 focus-visible:text-red-500"
+          className="font-medium text-slate-200 hover:text-yellow-700 focus-visible:text-yellow-700"
           rel="noopener noreferrer"
           target="_blank"
-          href="https://www.stanford.edu/"
+          href="https://www.gatech.edu/"
         >
           Georgia Tech&nbsp;
         </a>
@@ -74,37 +74,40 @@ function Experience() {
           "Design and Manufacturing",
         ]}
         dates="May 2025 - Present"
-        description="squid-inspired soft nozzle to improve underwater vehicle efficiency (η > 80%)"
+        description="Researching squid-inspired soft nozzle for propellers to improve underwater vehicle efficiency (η > 80%) funded by DARPA."
         image="logos/bhamla_lab_logo.png"
-        xlink="assets/Bhamla Lab Squid Project June Presentation.pdf"
+        xlink="/Bhamla-Lab-Squid-Project-June25.pdf"
       />
       <ExperienceCard
-        title="Inverse Kinematics Approximation with Machine Learning"
+        title="Inverse Kinematics Approximation with ML"
         company="Georgia Tech"
         tags={[
           "Robotic Manipulation",
           "Python",
           "Machine Learning",
+          "TensorFlow",
+          "PyBullet",
           "Git",
           "Teamwork",
         ]}
         dates="May 2025 - Sep 2025"
-        description="Machine Learning pipeline for approximating joint angles of redundant robot arms"
-        image="logos/IK_ML_logo.png"
+        description="Machine Learning pipeline for approximating joint angles given coordinates for redundant robot arms (Best Project Award)."
+        image="logos/ik_ml_logo.png"
         xlink="https://jfonseca32.github.io/Inverse-Kinematics-Approximation-with-ML/"
       />
       <ExperienceCard
-        title="Equipment Engineering Intern (2 Rotations"
+        title="Equipment Engineering Intern (2 Rotations)"
         company="The Coca-Cola Company"
         tags={[
           "Mechanical Engineering",
           "Quality Assurance",
           "Rapid Prototyping",
-          "Experimental Design",
+          "Experiment Design",
+          "Thermodynamics",
           "Global Impact",
         ]}
         dates="May 2023 - Aug 2023, Jan 2024 - May 2024"
-        description="Improvement and validation of new vending technologies and methods"
+        description="Improved and validated emerging vending and dispensing technologies, optimizing functionality and deployment methods."
         image="logos/coca_cola_logo.jpeg"
         xlink="https://www.coca-cola.com/us/en"
       />
@@ -120,13 +123,13 @@ function Experience() {
           "FEA",
         ]}
         dates="Sep 2022 - Present"
-        description="Design and validation of chassis and aerodynamic components of the car"
-        image="logos/hytech_racing_logo.png"
+        description="Design and validate aerodynamic and chassis components, contributing to performance and manufacturability improvements."
+        image="logos/hytech_logo.png"
         xlink="https://hytechracing.gatech.edu/"
       />
       <ExperienceCard
         title="Production Engineering Intern"
-        company="Sorvetes Rochinha (Ice-Cream Company)"
+        company="Sorvetes Rochinha"
         tags={[
           "Industrial Engineering",
           "Process Mapping and Automation",
@@ -135,7 +138,7 @@ function Experience() {
           "3D-Modeling",
         ]}
         dates="May 2022 - Aug 2022"
-        description="Implemented ISO9000 standards and automated processes to increase production"
+        description="Implemented production line optimization and quality control (ISO9000) for Brazil’s leading ice cream brand."
         image="logos/rochinha_logo.png"
         xlink="https://sorvetesrochinha.com.br/"
       />
