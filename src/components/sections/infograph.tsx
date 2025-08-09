@@ -108,7 +108,7 @@ function Experience() {
         ]}
         dates="May 2023 - Aug 2023, Jan 2024 - May 2024"
         description="Improved and validated emerging vending and dispensing technologies, optimizing functionality and deployment methods."
-        image="logos/coca_cola_logo.jpeg"
+        image="logos/coca_cola_logo.png"
         xlink="https://www.coca-cola.com/us/en"
       />
       <ExperienceCard
