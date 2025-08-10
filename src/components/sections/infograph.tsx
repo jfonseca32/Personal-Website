@@ -3,27 +3,25 @@ import ExperienceCard from "../experienceCard";
 
 export default function Infograph() {
   return (
-    <div className="z-10 flex flex-col pb-10 md:basis-1/2 md:pt-20">
-      <div>
-        <h1 className="top-0 z-50 rounded py-4 text-base font-bold uppercase tracking-widest text-slate-200">
-          About Me
-        </h1>
-        <div className="mb-8">
-          <AboutMe />
-        </div>
+    <div>
+      <h1 className="top-0 z-50 rounded py-4 text-base font-bold uppercase tracking-widest text-slate-200">
+        About Me
+      </h1>
+      <div className="mb-8">
+        <AboutMe />
       </div>
-
-      <div>
-        <h1 className="top-0 z-50 mb-4 rounded py-4 text-base font-bold uppercase tracking-widest text-slate-200">
-          Experiences
-        </h1>
-        <div className="mb-8">
-          <Experience />
-          <div className="mt-4">
-            <Button text="View Resume" xlink="/JPDF-Aug25-Resume.pdf" />
-          </div>
-        </div>
-      </div>
+    </div>
+    
+    <div className="mb-4">
+      <Button text="View Resume" xlink="/JPDF-Aug25-Resume.pdf" />
+    </div>
+    
+    <div className="mb-8">
+      <h1 className="top-0 z-50 mb-4 rounded py-4 text-base font-bold uppercase tracking-widest text-slate-200">
+        Experiences
+      </h1>
+      <Experience />
+    </div>
 
       {/* <h1 className="sticky top-0 z-50 mb-4 rounded py-4 text-base font-bold uppercase tracking-widest text-slate-200 backdrop-blur-md">
         Projects
@@ -54,7 +52,8 @@ function AboutMe() {
         </a>
         studying Mechanical Engineering and Computer Science. Broadly speaking,
         I am interested in mechanical design, robotics, machine learning, and sustainable
-        tech.
+        tech. I am currently seeking Engineering or Programming roles for the Fall, Spring, and Summer, 
+        and full-time opportunities after graduation where I can apply my skills to solve complex, real-world problems.
       </p>
     </>
   );
