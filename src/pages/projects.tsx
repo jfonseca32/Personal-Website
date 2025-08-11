@@ -11,13 +11,6 @@ export default function ProjectsPage() {
       </h1>
       <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <ProjectCard
-          title="Inverses Kinematics with Machine Learning"
-          description="Designed a machine learning framework to solve inverse kinematics (IK) for redundant robotic arms, achieving sub-degree accuracy and sub-ms inference in predicted joint angles."
-          image="projects/IK-ML/cover.png"
-          tags={["Machine Learning", "Robotic Manipulation", "Teamwork", "Git", "Award Winning"]}
-          xlink="https://jfonseca32.github.io/Inverse-Kinematics-Approximation-with-ML/"
-        />
-        <ProjectCard
           title="Robotic Backpack to Follow Me to Class"
           description="Currently designing and prototyping a 'robot backpack' that follows user using YOLO-based person tracking and obstacle avoidance on a Raspberry Pi."
           image="projects/RoboBackpack/cover.png"
