@@ -1,6 +1,3 @@
-Rewrite the code with Option 2. This is the embed link: <iframe src="https://1drv.ms/p/c/8e55a37ffd6c4837/IQQtja8d-hw3RaucZ8teW-FFAaCcCk-0_su9_rDdRVBQbvA?wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">Este é um apresentação do <a target="_blank" href="https://office.com">Microsoft Office</a> incorporado, da plataforma <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
-
-This is the code:
 import ExperienceCard from "../experienceCard";
 
 export default function Infograph() {
