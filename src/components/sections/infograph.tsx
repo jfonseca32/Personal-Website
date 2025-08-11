@@ -71,7 +71,7 @@ function Experience() {
         dates="May 2025 - Present"
         description="Researching squid-inspired soft nozzle for propellers to improve underwater vehicle efficiency (η > 80%) funded by DARPA."
         image="logos/bhamla_lab_logo.png"
-        xlink="/Bhamla-Lab-Squid-Project-June25.pdf"
+        xlink="https://1drv.ms/p/c/8e55a37ffd6c4837/ES2Nrx36HDdFq5xny15b4UUBonhdou-FI2MOcbI56hjJ_Q?e=udHzT2"
       />
       <ExperienceCard
         title="Inverse Kinematics Approximation with ML"
