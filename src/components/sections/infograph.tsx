@@ -13,12 +13,7 @@ export default function Infograph() {
           <AboutMe />
         </div>
       </div>
-
-      {/* Resume Button - top right inside flow */}
-      <div className="flex justify-end mb-8">
-        <Button text="View Resume" xlink="/JPDF-Aug25-Resume.pdf" />
-      </div>
-
+      
       {/* Experiences */}
       <div>
         <h1 className="top-0 z-50 mb-4 rounded py-4 text-base font-bold uppercase tracking-widest text-slate-200">
