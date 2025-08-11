@@ -4,6 +4,11 @@ import ExperienceCard from "../experienceCard";
 export default function Infograph() {
   return (
     <div className="z-10 flex flex-col pb-10 md:basis-1/2 md:pt-20">
+      {/* Resume Button - fixed in top right */}
+      <div className="fixed top-4 right-4 z-50">
+        <Button text="View Resume" xlink="/resume.pdf" />
+      </div>
+      
       {/* About Me */}
       <div>
         <h1 className="top-0 z-50 rounded py-4 text-base font-bold uppercase tracking-widest text-slate-200">
@@ -12,11 +17,6 @@ export default function Infograph() {
         <div className="mb-8">
           <AboutMe />
         </div>
-      </div>
-
-      {/* Resume Button*/}
-      <div className="mb-8">
-        <Button text="View Resume" xlink="/resume.pdf" />
       </div>
 
       {/* Experiences */}
