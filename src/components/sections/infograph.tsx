@@ -5,8 +5,8 @@ export default function Infograph() {
   return (
     <div className="z-10 flex flex-col pb-10 md:basis-1/2 md:pt-20">
       {/* Resume Button - fixed in top right */}
-      <div className="fixed top-4 right-4 z-50">
-        <Button text="View Resume" xlink="/resume.pdf" />
+      <div className="top-4 right-4 z-50">
+        <Button text="View Resume" xlink="/JPDF-Aug25-Resume.pdf" />
       </div>
       
       {/* About Me */}
