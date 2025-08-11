@@ -1,33 +1,11 @@
-import { useState } from "react";
+Rewrite the code with Option 2. This is the embed link: <iframe src="https://1drv.ms/p/c/8e55a37ffd6c4837/IQQtja8d-hw3RaucZ8teW-FFAaCcCk-0_su9_rDdRVBQbvA?wdAr=1.7777777777777777" width="476px" height="288px" frameborder="0">Este é um apresentação do <a target="_blank" href="https://office.com">Microsoft Office</a> incorporado, da plataforma <a target="_blank" href="https://office.com/webapps">Office</a>.</iframe>
+
+This is the code:
 import ExperienceCard from "../experienceCard";
 
 export default function Infograph() {
-  const [showPresentation, setShowPresentation] = useState(false);
-
   return (
-    <div className="z-10 flex flex-col pb-10 md:basis-1/2 md:pt-20">
-      {/* Modal for embedded PowerPoint */}
-      {showPresentation && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-80">
-          <div className="relative w-11/12 h-5/6 bg-white rounded shadow-lg">
-            <button
-              onClick={() => setShowPresentation(false)}
-              className="absolute top-2 right-2 bg-red-500 text-white px-3 py-1 rounded"
-            >
-              ✕
-            </button>
-            <iframe
-              src="https://1drv.ms/p/c/8e55a37ffd6c4837/IQQtja8d-hw3RaucZ8teW-FFAaCcCk-0_su9_rDdRVBQbvA?wdAr=1.7777777777777777"
-              width="100%"
-              height="100%"
-              frameBorder="0"
-              title="Bhamla Lab Presentation"
-              allowFullScreen
-            ></iframe>
-          </div>
-        </div>
-      )}
-
+    <div className="z-10 flex flex-col pb-10 md:basis-1/2 md:pt-20">  
       {/* About Me */}
       <div>
         <h1 className="top-0 z-50 rounded py-4 text-base font-bold uppercase tracking-widest text-slate-200">
@@ -37,14 +15,14 @@ export default function Infograph() {
           <AboutMe />
         </div>
       </div>
-
+      
       {/* Experiences */}
       <div>
         <h1 className="top-0 z-50 mb-4 rounded py-4 text-base font-bold uppercase tracking-widest text-slate-200">
           Experiences
         </h1>
         <div className="mb-8">
-          <Experience onBhamlaClick={() => setShowPresentation(true)} />
+          <Experience />
         </div>
       </div>
     </div>
@@ -54,25 +32,27 @@ export default function Infograph() {
 /* prettier-ignore */
 function AboutMe() {
   return (
-    <p>
-      Hey, glad you’re here! My name is Joao Pedro and I am a Senior at&nbsp;
-      <a
-        className="font-medium text-slate-200 hover:text-yellow-500 focus-visible:text-yellow-700"
-        rel="noopener noreferrer"
-        target="_blank"
-        href="https://www.gatech.edu/"
-      >
-        Georgia Tech&nbsp;
-      </a>
-      studying Mechanical Engineering and Computer Science. Broadly speaking,
-      I am interested in mechanical design, robotics, machine learning, and sustainable
-      tech. I am currently seeking Engineering or Programming roles for the Fall, Spring, and Summer, 
-      and full-time opportunities after graduation where I can apply my skills to solve complex, real-world problems.
-    </p>
+    <>
+      <p>
+        Hey, glad you’re here! My name is Joao Pedro and I am a Senior at&nbsp;
+        <a
+          className="font-medium text-slate-200 hover:text-yellow-500 focus-visible:text-yellow-700"
+          rel="noopener noreferrer"
+          target="_blank"
+          href="https://www.gatech.edu/"
+        >
+          Georgia Tech&nbsp;
+        </a>
+        studying Mechanical Engineering and Computer Science. Broadly speaking,
+        I am interested in mechanical design, robotics, machine learning, and sustainable
+        tech. I am currently seeking Engineering or Programming roles for the Fall, Spring, and Summer, 
+        and full-time opportunities after graduation where I can apply my skills to solve complex, real-world problems.
+      </p>
+    </>
   );
 }
 
-function Experience({ onBhamlaClick }) {
+function Experience() {
   return (
     <>
       <ExperienceCard
@@ -88,7 +68,7 @@ function Experience({ onBhamlaClick }) {
         dates="May 2025 - Present"
         description="Researching squid-inspired soft nozzle for propellers to improve underwater vehicle efficiency (η > 80%) funded by DARPA."
         image="logos/bhamla_lab_logo.png"
-        onClick={onBhamlaClick} // Open modal when clicked
+        xlink="https://1drv.ms/p/c/8e55a37ffd6c4837/ES2Nrx36HDdFq5xny15b4UUBonhdou-FI2MOcbI56hjJ_Q?e=udHzT2"
       />
       <ExperienceCard
         title="Inverse Kinematics Approximation with ML"
