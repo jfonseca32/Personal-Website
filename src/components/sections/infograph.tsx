@@ -1,4 +1,3 @@
-import Button from "../button";
 import ExperienceCard from "../experienceCard";
 
 export default function Infograph() {
