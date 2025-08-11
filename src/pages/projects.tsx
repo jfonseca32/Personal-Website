@@ -25,7 +25,7 @@ export default function ProjectsPage() {
           xlink="/under-construction"
         />
         <ProjectCard
-          title="Creative Desicions and Design Challenge"
+          title="Creative Decisions and Design Challenge"
           description="Used a structured design process to design, construct, build and test an automated system for a head-to-head competition with 50+ teams (placed #2 seed)."
           image="projects/ME2110/cover.png"
           tags={["Rapid Prototyping", "Machining", "3D Modelling", "Arduino"]}
