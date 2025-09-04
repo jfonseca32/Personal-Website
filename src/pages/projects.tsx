@@ -15,7 +15,7 @@ export default function ProjectsPage() {
           description="Currently designing and prototyping a 'robot backpack' that follows user using YOLO-based person tracking and obstacle avoidance on a Raspberry Pi."
           image="projects/RoboBackpack/cover.png"
           tags={["Startup Idea", "DFMA", "3D Modeling", "Hardware", "Software", "Machine Learning"]}
-          xlink="/under-construction"
+          xlink="https://github.com/jfonseca32/RoboPack/"
         />
         <ProjectCard
           title="Creative Decisions and Design Challenge"
