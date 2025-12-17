@@ -32,11 +32,60 @@ export default function ProjectsPage() {
           xlink="https://github.com/jfonseca32/Inverse-Kinematics-Approximation-with-ML"
         />
         <ProjectCard
+          title="Compressed-Air IC Engine Characterization"
+          description="Built a full work–energy model of a compressed-air IC engine: torque transducer calibration, friction/flywheel inertia, stroke-resolved air-work/leakage, crank-angle injection timing sweeps."
+          image="projects/IC-Engine/cover.jpg"
+          tags={["Thermo/Work-Energy", "York Regression", "MATLAB", "DAQ/Instrumentation", "Power Optimization"]}
+          xlink="projects/IC-Engine/ME4056_ICEngine_Report3.pdf"
+        />
+        <ProjectCard
+          title="DC Motor System ID + PID Control"
+          description="Identified a DC motor’s first-order dynamics in time + frequency domains, mapped dead-zone and saturation limits, designed/tuned P/PD/PID controllers in a non-linear Simulink model to meet position-control specs."
+          image="projects/DC-Motor/cover.png"
+          tags={["Controls", "PID", "Frequency Response", "Simulink", "Nonlinear Modeling"]}
+          xlink="projects/DC-Motor/ME4056_SysId.01_Report_10.03.2025_rev0.pdf"
+        />
+        <ProjectCard
+          title="Tensile Test Rig Calibration"
+          description="Calibrated custom testing rig by deriving force-transducer and displacement-sensor calibrations, modeling rig compliance, and removing bias/noise. Verified the rig meets specs and proposed upgrades."
+          image="projects/Test-Rig/cover.png"
+          tags={["Calibration", "MATLAB", "Mechanical Testing", "Design Recommendations"]}
+          xlink="projects/Test-Rig/ME3057_TestRig_Report_A09B3T3_03052025.pdf"
+        />
+        <ProjectCard
           title="My Very Own Personal Website"
           description="Designed and developed a responsive website using React, Tailwind CSS, and Framer Motion, with animated page transitions, dynamic content rendering, and custom 3D assets."
           image="projects/Website/cover.png"
           tags={["React", "Typescript", "TailwindCSS", "Framer Motion", "Blender"]}
           xlink="https://jpdf.me/"
+        />
+        <ProjectCard
+          title="Racing Catamaran Structural + CFD Analysis (NX)"
+          description="Parametric Siemens NX model of an International Tornado–style racing catamaran, with FEA load cases, mesh convergence, composite material selection, and CFD."
+          image="projects/Catamaran-FEA-CFD/cover.png"
+          tags={["Siemens NX", "FEA", "CFD", "Composite Design", "Mesh Convergence", "Structural Analysis", "Parametric CAD", "Team Project"]}
+          xlink="projects/Catamaran-FEA-CFD/ME4042_Final_Report.pdf"
+        />
+        <ProjectCard
+          title="Classic VW Beetle CAD (NX)"
+          description="CAD build of a classic VW Beetle using advanced NX surfacing + solid workflows."
+          image="projects/VW-Beetle-CAD/cover.png"
+          tags={["Siemens NX", "CAD Surfacing", "Solid Modeling", "Parametric Modeling", "Design Detailing", "Manufacturable Geometry"]}
+          xlink="projects/VW-Beetle-CAD/ME4042_VW_Beetle.pdf"
+        />
+        <ProjectCard
+          title="Rotor–Pulley Shaft Design (Fatigue + Deflection)"
+          description="Designed a rotor–pulley steel shaft for infinite life using Shigley methods: full FBD + shear/moment/torsion diagrams, DE–Goodman fatigue with stress concentrations and high reliability, plus stiffness/deflection checks and McMaster-Carr component selection."
+          image="projects/Shaft-Design/cover.png"
+          tags={["Machine Design", "Fatigue (Goodman)", "Shaft Design", "Stress Concentration", "Bearing/Retaining Rings", "MATLAB", "Shigley"]}
+          xlink="projects/Shaft-Design/ME3180_DP2.pdf"
+        />
+        <ProjectCard
+          title="Geared Drive: Gear + Bearing Design (AGMA + L10)"
+          description="Replaced a belt drive with a spur-gear reduction and sized the system end-to-end: tooth counts/center distance, gear forces, AGMA bending/contact checks, bearing reactions + L10 life, and housing/shaft fits and tolerances with an itemized McMaster BOM."
+          image="projects/Gear-Bearing-Design/cover.png"
+          tags={["Machine Design", "Gear Design (AGMA)", "Bearing Life (L10)", "Fits & Tolerances", "Load Analysis", "McMaster BOM"]}
+          xlink="projects/Gear-Bearing-Design/ME3180_DP3.pdf"
         />
       </div>
     </div>
