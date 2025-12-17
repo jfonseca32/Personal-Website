@@ -41,9 +41,8 @@ function AboutMe() {
           Georgia Tech&nbsp;
         </a>
         studying Mechanical Engineering and Computer Science. Broadly speaking,
-        I am interested in mechanical design, robotics, machine learning, and sustainable
-        tech. I am currently seeking Engineering or Programming roles for the Fall, Spring, and Summer, 
-        and full-time opportunities after graduation where I can apply my skills to solve complex, real-world problems.
+        I am interested in product design, robotics, machine learning, and sustainable
+        tech. I am currently seeking Engineering and/or Programming roles where I can apply my skills to solve complex, real-world problems.
       </p>
     </>
   );
@@ -52,6 +51,22 @@ function AboutMe() {
 function Experience() {
   return (
     <>
+      <ExperienceCard
+        title="Vehicle Dynamics Engineering Intern"
+        company="Tesla, Inc."
+        tags={[
+          "Mechanical Engineering",
+          "Vehicle Dynamics",
+          "Python/C++/Matlab",
+          "Experiment Design",
+          "Fluid Mechanics",
+          "PID Control",
+        ]}
+        dates="Jan 2026 - Jun 2026"
+        description=""
+        image="logos/tesla_logo.png"
+        xlink="https://www.tesla.com"
+      />
       <ExperienceCard
         title="Undergraduate Researcher"
         company="The Bhamla Lab"
@@ -68,21 +83,20 @@ function Experience() {
         xlink="https://drive.google.com/file/d/1bPt0SQOMAN0USxPDNaUjPf6T768vCbhc/view?usp=sharing"
       />
       <ExperienceCard
-        title="Inverse Kinematics Approximation with ML"
-        company="Georgia Tech"
+        title="Aerodynamics + Chassis Engineer"
+        company="FSAE HyTech Racing"
         tags={[
-          "Robotic Manipulation",
-          "Python",
-          "Machine Learning",
-          "TensorFlow",
-          "PyBullet",
-          "Git",
-          "Teamwork",
+          "CATIA/SolidWorks",
+          "Ansys Simulation",
+          "Wind Tunnels",
+          "Aerodynamics Design",
+          "Chassis Design",
+          "FEA",
         ]}
-        dates="May 2025 - Sep 2025"
-        description="Machine Learning pipeline for approximating joint angles given coordinates for redundant robot arms (Best Project Award)."
-        image="logos/ik_ml_logo.png"
-        xlink="https://jfonseca32.github.io/Inverse-Kinematics-Approximation-with-ML/"
+        dates="Sep 2022 - May 2025"
+        description="Design and validate aerodynamic and chassis components, contributing to performance and manufacturability of car."
+        image="logos/hytech_logo.png"
+        xlink="https://hytechracing.gatech.edu/"
       />
       <ExperienceCard
         title="Equipment Engineering Intern (2 Rotations)"
@@ -99,22 +113,6 @@ function Experience() {
         description="Improved and validated emerging vending and dispensing technologies, optimizing functionality and deployment methods."
         image="logos/coca_cola_logo.png"
         xlink="https://www.cokesolutions.com/equipment/"
-      />
-      <ExperienceCard
-        title="Aerodynamics Engineer"
-        company="FSAE HyTech Racing"
-        tags={[
-          "CATIA/SolidWorks",
-          "Ansys Simulation",
-          "Wind Tunnels",
-          "Aerodynamics Design",
-          "Chassis Design",
-          "FEA",
-        ]}
-        dates="Sep 2022 - Present"
-        description="Design and validate aerodynamic and chassis components, contributing to performance and manufacturability of car."
-        image="logos/hytech_logo.png"
-        xlink="https://hytechracing.gatech.edu/"
       />
       <ExperienceCard
         title="Production Engineering Intern"
