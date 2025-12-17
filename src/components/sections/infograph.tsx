@@ -58,6 +58,7 @@ function Experience() {
           "Mechanical Engineering",
           "Vehicle Dynamics",
           "Python",
+          "C++",
           "Experiment Design",
           "Fluid Mechanics",
           "PID",
