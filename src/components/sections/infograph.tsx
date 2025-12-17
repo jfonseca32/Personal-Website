@@ -57,10 +57,10 @@ function Experience() {
         tags={[
           "Mechanical Engineering",
           "Vehicle Dynamics",
-          "Python/C++/Matlab",
+          "Python",
           "Experiment Design",
           "Fluid Mechanics",
-          "PID Control",
+          "PID",
         ]}
         dates="Jan 2026 - Jun 2026"
         description=""
@@ -83,6 +83,22 @@ function Experience() {
         xlink="https://drive.google.com/file/d/1bPt0SQOMAN0USxPDNaUjPf6T768vCbhc/view?usp=sharing"
       />
       <ExperienceCard
+        title="Equipment Engineering Intern (2 Rotations)"
+        company="The Coca-Cola Company"
+        tags={[
+          "Mechanical Engineering",
+          "Quality Assurance",
+          "Prototyping",
+          "Experiment Design",
+          "Thermodynamics",
+          "Global Impact",
+        ]}
+        dates="May 2023 - Aug 2023, Jan 2024 - May 2024"
+        description="Improved and validated emerging vending and dispensing technologies, optimizing functionality and deployment methods."
+        image="logos/coca_cola_logo.png"
+        xlink="https://www.cokesolutions.com/equipment/"
+      />
+      <ExperienceCard
         title="Aerodynamics + Chassis Engineer"
         company="FSAE HyTech Racing"
         tags={[
@@ -97,22 +113,6 @@ function Experience() {
         description="Design and validate aerodynamic and chassis components, contributing to performance and manufacturability of car."
         image="logos/hytech_logo.png"
         xlink="https://hytechracing.gatech.edu/"
-      />
-      <ExperienceCard
-        title="Equipment Engineering Intern (2 Rotations)"
-        company="The Coca-Cola Company"
-        tags={[
-          "Mechanical Engineering",
-          "Quality Assurance",
-          "Rapid Prototyping",
-          "Experiment Design",
-          "Thermodynamics",
-          "Global Impact",
-        ]}
-        dates="May 2023 - Aug 2023, Jan 2024 - May 2024"
-        description="Improved and validated emerging vending and dispensing technologies, optimizing functionality and deployment methods."
-        image="logos/coca_cola_logo.png"
-        xlink="https://www.cokesolutions.com/equipment/"
       />
       <ExperienceCard
         title="Production Engineering Intern"
