@@ -25,6 +25,13 @@ export default function ProjectsPage() {
           xlink="https://drive.google.com/file/u/0/d/1NChYIQVQt2E1Q0AGluSSGinvtOE8hyNx/view?usp=sharing&usp=embed_facebook&pli=1"
         />
         <ProjectCard
+          title="Robotic Arm Inverse Kinematics with ML"
+          description="Machine Learning pipeline for approximating joint angles given coordinates for 6 and 4-DOF redundant robot arms (Best Project Award)."
+          image="projects/IK-ML/cover.png"
+          tags={["Robotic Manipulation", "Python", "Machine Learning", "TensorFlow", "PyBullet", "Git", "Teamwork"]}
+          xlink="https://github.com/jfonseca32/Inverse-Kinematics-Approximation-with-ML"
+        />
+        <ProjectCard
           title="My Very Own Personal Website"
           description="Designed and developed a responsive website using React, Tailwind CSS, and Framer Motion, with animated page transitions, dynamic content rendering, and custom 3D assets."
           image="projects/Website/cover.png"
