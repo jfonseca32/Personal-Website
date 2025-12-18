@@ -29,7 +29,7 @@ export default function ProjectsPage() {
           description="Machine Learning pipeline for approximating joint angles given coordinates for 6 and 4-DOF redundant robot arms (Best Project Award)."
           image="projects/IK-ML/cover.png"
           tags={["Robotics", "Python", "Scikit-learn", "Machine Learning", "TensorFlow", "PyBullet"]}
-          xlink="https://github.com/jfonseca32/Inverse-Kinematics-Approximation-with-ML"
+          xlink="https://jfonseca32.github.io/Inverse-Kinematics-Approximation-with-ML/"
         />
         <ProjectCard
           title="Compressed-Air IC Engine Characterization"
