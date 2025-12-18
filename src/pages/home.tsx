@@ -7,12 +7,6 @@ import Button from "../components/button";
 export default function Home() {
   useDocumentTitle("Home | Joao Pedro Dudziak Fonseca");
   return (
-    <div className="mx-auto min-h-screen max-w-screen-xl px-6 md:px-12 lg:px-24">
-      {/* Top-right resume button */}
-      <div className="absolute right-6 top-6 md:right-12 md:top-8 z-40">
-        <Button text="View Resume" xlink="/JPDF-Aug25-Resume.pdf" />
-      </div>
-      
       <div className="fixed inset-0 hidden max-h-screen md:block">
         <Lanyard />
       </div>
