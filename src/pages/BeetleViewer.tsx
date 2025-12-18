@@ -11,7 +11,7 @@ export default function BeetleViewer() {
 
       <div className="mt-6 overflow-hidden rounded-xl border border-white/10 bg-white/5">
         <model-viewer
-          src={getImageUrl("projects/Beetle/beetle_assembly.glb")}
+          src={getImageUrl("beetle_assembly.glb")}
           camera-controls
           auto-rotate
           shadow-intensity="0.8"
