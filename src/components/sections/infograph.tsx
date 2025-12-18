@@ -65,7 +65,7 @@ function Experience() {
         ]}
         dates="Jan 2026 - Jun 2026"
         description=""
-        image="logos/tesla_logo.jpg"
+        image="logos/tesla_logo.png"
         xlink="https://www.tesla.com"
       />
       <ExperienceCard
