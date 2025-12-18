@@ -20,6 +20,5 @@ export default function Home() {
         <Hero></Hero>
         <Infograph></Infograph>
       </div>
-    </div>
   );
 }
