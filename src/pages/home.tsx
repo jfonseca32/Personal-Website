@@ -2,7 +2,6 @@ import Lanyard from "../components/lanyard";
 import Hero from "../components/sections/hero";
 import Infograph from "../components/sections/infograph";
 import { useDocumentTitle } from "../utils/utils";
-import Button from "../components/button";
 
 export default function Home() {
   useDocumentTitle("Home | Joao Pedro Dudziak Fonseca");
