@@ -32,6 +32,7 @@ function App() {
               </PageWrapper>
             }
           />
+        
           <Route
             path="/projects"
             element={
@@ -40,22 +41,7 @@ function App() {
               </PageWrapper>
             }
           />
-          <Route
-            path="/under-construction"
-            element={
-              <PageWrapper direction={direction}>
-                <UnderConstruction />
-              </PageWrapper>
-            }
-          />
-          <Route
-            path="*"
-            element={
-              <PageWrapper direction={direction}>
-                <NotFound />
-              </PageWrapper>
-            }
-          />
+        
           <Route
             path="/projects/beetle"
             element={
@@ -64,11 +50,24 @@ function App() {
               </PageWrapper>
             }
           />
-
-    </PageWrapper>
-  }
-/>
-
+        
+          <Route
+            path="/under-construction"
+            element={
+              <PageWrapper direction={direction}>
+                <UnderConstruction />
+              </PageWrapper>
+            }
+          />
+        
+          <Route
+            path="*"
+            element={
+              <PageWrapper direction={direction}>
+                <NotFound />
+              </PageWrapper>
+            }
+          />
         </Routes>
       </AnimatePresence>
     </>
