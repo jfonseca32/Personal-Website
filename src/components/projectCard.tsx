@@ -28,15 +28,17 @@ export default function ProjectCard(props: ProjectCardData) {
       className="flex max-w-full flex-col rounded-lg border border-white/10 bg-white/5 shadow-md backdrop-blur transition hover:bg-white/10 hover:shadow-lg hover:ring-1 hover:ring-white/10"
     >
       {props.image && (
-        <img
-          src={getImageUrl(props.image)}
-          alt={props.title}
-          className={`select-none rounded-t-lg transition-opacity duration-700 ease-in ${
-            imageLoaded ? "opacity-100" : "opacity-0"
-          }`}
-          draggable={false}
-          onLoad={() => setImageLoaded(true)}
-        />
+        <div className="h-56 w-full overflow-hidden rounded-t-lg bg-white/5">
+          <img
+            src={getImageUrl(props.image)}
+            alt={props.title}
+            draggable={false}
+            onLoad={() => setImageLoaded(true)}
+            className={`h-full w-full select-none object-cover object-center transition-opacity duration-700 ease-in ${
+              imageLoaded ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        </div>
       )}
 
       <div className="flex flex-grow flex-col p-5">
