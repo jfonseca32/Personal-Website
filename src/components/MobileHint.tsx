@@ -24,11 +24,11 @@ export default function MobileHint() {
   if (!show) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] grid place-items-center px-6">
+    <div className="fixed inset-0 z-[9999] grid place-items-center px-8">
       <div className="w-full max-w-sm rounded-2xl border border-white/10 bg-slate-950/80 p-4 text-center shadow-xl backdrop-blur">
-        <p className="text-sm font-semibold text-slate-100">Rotate your phone</p>
-        <p className="mt-1 text-xs text-slate-300">
-          Double click and drag to move the lanyard.
+        <p className="text-lg font-semibold text-slate-100">Rotate your phone</p>
+        <p className="mt-1 text-sm text-slate-300">
+          Drag to move the lanyard.
         </p>
       </div>
     </div>
