@@ -36,49 +36,49 @@ export default function ProjectsPage() {
           description="Parametric Siemens NX model of an International Tornado–style racing catamaran, with FEA load cases, mesh convergence, composite material selection, and CFD."
           image="projects/Catamaran/cover.jpg"
           tags={["Siemens NX", "FEA", "CFD", "Composites", "Parametric CAD"]}
-          xlink="ME4042 - Final Report.pdf"
+          xlink="/public/ME4042 - Final Report.pdf"
         />
         <ProjectCard
           title="Classic VW Beetle CAD (NX)"
           description="CAD build of a classic VW Beetle using advanced NX surfacing + solid workflows."
           image="projects/Beetle/cover.png"
           tags={["Siemens NX", "Solid Modeling", "Surface Modeling", "Raster"]}
-          xlink="/projects/beetle"
+          xlink="/public/beetle"
         />
         <ProjectCard
           title="Geared Drive: Gear + Bearing Design (AGMA + L10)"
           description="Replaced belt drive with a spur-gear reduction and sized the system end-to-end with an itemized McMaster BOM."
           image="projects/DP3/cover.png"
           tags={["Machine Design", "Gear Design (AGMA)", "Bearing Life (L10)", "Fits & Tolerances"]}
-          xlink="ME3180___DP3.pdf"
+          xlink="/public/ME3180___DP3.pdf"
         />
         <ProjectCard
           title="Compressed-Air IC Engine Characterization"
           description="Built a full work-energy model of a compressed-air IC engine: transducer calibration, friction/flywheel inertia, stroke-resolved air-work/leakage, crank-angle injection timing."
           image="projects/IC-Engine/cover.jpg"
           tags={["Thermo", "Work-Energy", "York Regression", "MATLAB", "DAQ", "Optimization"]}
-          xlink="ME4056_ICEngine_Report3.pdf"
+          xlink="/public/ME4056_ICEngine_Report3.pdf"
         />
         <ProjectCard
           title="DC Motor System ID + PID Control"
           description="Identified DC motor’s dynamics in time + frequency domains, mapped dead-zone and saturation limits, tuned P/PD/PID controllers in a non-linear Simulink model to meet specs."
           image="projects/DC-Motor/cover.jpg"
           tags={["Controls", "PID", "Frequency Response", "Simulink", "Nonlinear Modeling"]}
-          xlink="ME4056_SysId.01_Report_10.03.2025_rev0.pdf"
+          xlink="/public/ME4056_SysId.01_Report_10.03.2025_rev0.pdf"
         />
         <ProjectCard
           title="Tensile Test Rig Calibration"
           description="Calibrated custom testing rig by deriving force-transducer and displacement-sensor calibrations, modeling rig compliance, and removing bias/noise. Verified the rig meets specs and proposed upgrades."
           image="projects/Test-Rig/cover.jpg"
           tags={["Calibration", "MATLAB", "Mechanical Testing", "Design Recommendations", "DAQ"]}
-          xlink="ME3057_TestRig_Report_A09B3T3_03052025.pdf"
+          xlink="/public/ME3057_TestRig_Report_A09B3T3_03052025.pdf"
         />
         <ProjectCard
           title="Rotor–Pulley Shaft Design (Fatigue + Deflection)"
           description="Designed a rotor–pulley steel shaft for infinite life using Shigley methods and McMaster-Carr component selection."
           image="projects/DP2/cover.png"
           tags={["Fatigue (Goodman)", "Shaft Design", "Stress Concentration", "MATLAB"]}
-          xlink="ME3180___DP2.pdf"
+          xlink="/public/ME3180___DP2.pdf"
         />
         <ProjectCard
           title="My Very Own Personal Website"
