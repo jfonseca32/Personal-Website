@@ -40,7 +40,7 @@ export default function ProjectsPage() {
         />
         <ProjectCard
           title="DC Motor System ID + PID Control"
-          description="Identified a DC motor’s first-order dynamics in time + frequency domains, mapped dead-zone and saturation limits, designed/tuned P/PD/PID controllers in a non-linear Simulink model to meet position-control specs."
+          description="Identified a DC motor’s first-order dynamics in time + frequency domains, mapped dead-zone and saturation limits, tuned P/PD/PID controllers in a non-linear Simulink model to meet specs."
           image="projects/DC-Motor/cover.jpg"
           tags={["Controls", "PID", "Frequency Response", "Simulink", "Nonlinear Modeling"]}
           xlink="ME4056_SysId.01_Report_10.03.2025_rev0.pdf"
@@ -67,18 +67,18 @@ export default function ProjectsPage() {
           xlink="ME4042 - Lab-Based Midterm – Classic VW Beetle.pdf"
         />
         <ProjectCard
-          title="Rotor–Pulley Shaft Design (Fatigue + Deflection)"
-          description="Designed a rotor–pulley steel shaft for infinite life using Shigley methods: full FBD + shear/moment/torsion diagrams, DE–Goodman fatigue with stress concentrations and high reliability, plus stiffness/deflection checks and McMaster-Carr component selection."
-          image="projects/DP2/cover.png"
-          tags={["Machine Design", "Fatigue (Goodman)", "Shaft Design", "Stress Concentration", "Bearing/Retaining Rings", "MATLAB", "Shigley"]}
-          xlink="ME3180___DP2.pdf"
-        />
-        <ProjectCard
           title="Geared Drive: Gear + Bearing Design (AGMA + L10)"
-          description="Replaced a belt drive with a spur-gear reduction and sized the system end-to-end: tooth counts/center distance, gear forces, AGMA bending/contact checks, bearing reactions + L10 life, and housing/shaft fits and tolerances with an itemized McMaster BOM."
+          description="Replaced belt drive with a spur-gear reduction and sized the system end-to-end with an itemized McMaster BOM."
           image="projects/DP3/cover.png"
           tags={["Machine Design", "Gear Design (AGMA)", "Bearing Life (L10)", "Fits & Tolerances", "Load Analysis", "McMaster BOM"]}
           xlink="ME3180___DP3.pdf"
+        />
+        <ProjectCard
+          title="Rotor–Pulley Shaft Design (Fatigue + Deflection)"
+          description="Designed a rotor–pulley steel shaft for infinite life using Shigley methods and McMaster-Carr component selection."
+          image="projects/DP2/cover.png"
+          tags={["Machine Design", "Fatigue (Goodman)", "Shaft Design", "Stress Concentration", "Bearing/Retaining Rings", "MATLAB", "Shigley"]}
+          xlink="ME3180___DP2.pdf"
         />
         <ProjectCard
           title="My Very Own Personal Website"
