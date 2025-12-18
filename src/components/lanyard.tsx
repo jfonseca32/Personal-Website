@@ -3,7 +3,12 @@
 import * as THREE from "three";
 import { useEffect, useRef, useState } from "react";
 import { Canvas, extend, useThree, useFrame } from "@react-three/fiber";
-import { useGLTF, useTexture, Environment, Lightformer } from "@react-three/drei";
+import {
+  useGLTF,
+  useTexture,
+  Environment,
+  Lightformer,
+} from "@react-three/drei";
 import {
   BallCollider,
   CuboidCollider,
@@ -24,57 +29,50 @@ useTexture.preload(bandTexturePath);
 
 export default function Lanyard() {
   return (
-    <div className="select-none touch-none overscroll-none">
-      <Canvas
-        camera={{ position: [0, 0, 10], fov: 20 }}
-        style={{ touchAction: "none" }}
-        onCreated={({ gl }) => {
-          // disable browser gestures / selection on the canvas (mobile + desktop)
-          gl.domElement.style.touchAction = "none";
-          gl.domElement.style.userSelect = "none";
-          // iOS Safari
-          // @ts-ignore
-          gl.domElement.style.webkitUserSelect = "none";
-          // @ts-ignore
-          gl.domElement.style.webkitTouchCallout = "none";
-        }}
-      >
-        <ambientLight intensity={Math.PI} />
-        <Physics interpolate gravity={[0, -30, 0]} timeStep={1 / 60}>
-          <Band />
-        </Physics>
-        <Environment background blur={0.75}>
-          <Lightformer
-            intensity={2}
-            color="white"
-            position={[0, -1, 5]}
-            rotation={[0, 0, Math.PI / 3]}
-            scale={[100, 0.1, 1]}
-          />
-          <Lightformer
-            intensity={3}
-            color="white"
-            position={[-1, -1, 1]}
-            rotation={[0, 0, Math.PI / 3]}
-            scale={[100, 0.1, 1]}
-          />
-          <Lightformer
-            intensity={3}
-            color="white"
-            position={[1, 1, 1]}
-            rotation={[0, 0, Math.PI / 3]}
-            scale={[100, 0.1, 1]}
-          />
-          <Lightformer
-            intensity={10}
-            color="white"
-            position={[-10, 0, 14]}
-            rotation={[0, Math.PI / 2, Math.PI / 3]}
-            scale={[100, 10, 1]}
-          />
-        </Environment>
-      </Canvas>
-    </div>
+    <Canvas
+      camera={{ position: [0, 0, 10], fov: 20 }}
+      // Make sure it behaves like a full-screen background canvas (like before)
+      className="fixed inset-0 h-full w-full z-0"
+      // Critical for mobile: prevents scroll/selection gestures fighting your drag
+      style={{ touchAction: "none" }}
+      dpr={[1, 2]}
+    >
+      <ambientLight intensity={Math.PI} />
+      <Physics interpolate gravity={[0, -30, 0]} timeStep={1 / 60}>
+        <Band />
+      </Physics>
+
+      <Environment background blur={0.75}>
+        <Lightformer
+          intensity={2}
+          color="white"
+          position={[0, -1, 5]}
+          rotation={[0, 0, Math.PI / 3]}
+          scale={[100, 0.1, 1]}
+        />
+        <Lightformer
+          intensity={3}
+          color="white"
+          position={[-1, -1, 1]}
+          rotation={[0, 0, Math.PI / 3]}
+          scale={[100, 0.1, 1]}
+        />
+        <Lightformer
+          intensity={3}
+          color="white"
+          position={[1, 1, 1]}
+          rotation={[0, 0, Math.PI / 3]}
+          scale={[100, 0.1, 1]}
+        />
+        <Lightformer
+          intensity={10}
+          color="white"
+          position={[-10, 0, 14]}
+          rotation={[0, Math.PI / 2, Math.PI / 3]}
+          scale={[100, 10, 1]}
+        />
+      </Environment>
+    </Canvas>
   );
 }
 
@@ -124,13 +122,21 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
   const [dragged, drag] = useState(false);
   const [hovered, hover] = useState(false);
 
+  // Helps avoid "first tap = hover, second tap = drag" behavior on touch devices
+  const isCoarse = useRef(false);
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    isCoarse.current = window.matchMedia("(pointer: coarse)").matches;
+  }, []);
+
   useRopeJoint(fixed, j1, [[0, 0, 0], [0, 0, 0], 1]); // prettier-ignore
   useRopeJoint(j1, j2, [[0, 0, 0], [0, 0, 0], 1]); // prettier-ignore
   useRopeJoint(j2, j3, [[0, 0, 0], [0, 0, 0], 1]); // prettier-ignore
   useSphericalJoint(j3, card, [[0, 0, 0], [0, 1.45, 0]]); // prettier-ignore
 
   useEffect(() => {
-    if (hovered) {
+    // Only change cursor for mouse devices
+    if (!isCoarse.current && hovered) {
       document.body.style.cursor = dragged ? "grabbing" : "grab";
       return () => void (document.body.style.cursor = "auto");
     }
@@ -141,9 +147,7 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
       vec.set(state.pointer.x, state.pointer.y, 0.5).unproject(state.camera);
       dir.copy(vec).sub(state.camera.position).normalize();
       vec.add(dir.multiplyScalar(state.camera.position.length()));
-
       [card, j1, j2, j3, fixed].forEach((ref) => ref.current?.wakeUp());
-
       card.current?.setNextKinematicTranslation({
         x: vec.x - dragged.x,
         y: vec.y - dragged.y,
@@ -155,7 +159,9 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
       // Fix most of the jitter when over pulling the card
       [j1, j2].forEach((ref) => {
         if (!ref.current.lerped)
-          ref.current.lerped = new THREE.Vector3().copy(ref.current.translation());
+          ref.current.lerped = new THREE.Vector3().copy(
+            ref.current.translation(),
+          );
 
         const clampedDistance = Math.max(
           0.1,
@@ -185,6 +191,36 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
   curve.curveType = "chordal";
   texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
 
+  const startDrag = (e) => {
+    e.stopPropagation();
+    e.nativeEvent?.preventDefault?.();
+
+    try {
+      e.target.setPointerCapture(e.pointerId);
+    } catch {}
+
+    // On touch, don't rely on hover to "activate" the element
+    hover(true);
+
+    drag(
+      new THREE.Vector3()
+        .copy(e.point)
+        .sub(vec.copy(card.current.translation())),
+    );
+  };
+
+  const endDrag = (e) => {
+    e.stopPropagation();
+    e.nativeEvent?.preventDefault?.();
+
+    try {
+      e.target.releasePointerCapture(e.pointerId);
+    } catch {}
+
+    drag(false);
+    hover(false);
+  };
+
   return (
     <>
       <group position={[-1.5, 4, 0]}>
@@ -210,47 +246,16 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
           <group
             scale={2.25}
             position={[0, -1.2, -0.05]}
-            onPointerOver={() => hover(true)}
-            onPointerOut={() => hover(false)}
-            onPointerDown={(e) => {
-              e.stopPropagation();
-              e.nativeEvent?.preventDefault?.();
-
-              e.target.setPointerCapture?.(e.pointerId);
-
-              // prevent text selection while dragging
-              document.body.style.userSelect = "none";
-              // @ts-ignore
-              document.body.style.webkitUserSelect = "none";
-
-              drag(
-                new THREE.Vector3()
-                  .copy(e.point)
-                  .sub(vec.copy(card.current.translation())),
-              );
+            // Hover only makes sense on mouse — prevents "tap once to hover"
+            onPointerOver={(e) => {
+              if (e.pointerType === "mouse") hover(true);
             }}
-            onPointerUp={(e) => {
-              e.stopPropagation();
-              e.nativeEvent?.preventDefault?.();
-
-              e.target.releasePointerCapture?.(e.pointerId);
-              drag(false);
-
-              document.body.style.userSelect = "";
-              // @ts-ignore
-              document.body.style.webkitUserSelect = "";
+            onPointerOut={(e) => {
+              if (e.pointerType === "mouse") hover(false);
             }}
-            onPointerCancel={(e) => {
-              e.stopPropagation();
-              e.nativeEvent?.preventDefault?.();
-
-              e.target.releasePointerCapture?.(e.pointerId);
-              drag(false);
-
-              document.body.style.userSelect = "";
-              // @ts-ignore
-              document.body.style.webkitUserSelect = "";
-            }}
+            onPointerDown={startDrag}
+            onPointerUp={endDrag}
+            onPointerCancel={endDrag}
           >
             <mesh geometry={nodes.card.geometry}>
               <meshPhysicalMaterial
