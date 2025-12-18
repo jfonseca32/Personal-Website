@@ -32,27 +32,6 @@ export default function ProjectsPage() {
           xlink="https://jfonseca32.github.io/Inverse-Kinematics-Approximation-with-ML/"
         />
         <ProjectCard
-          title="Compressed-Air IC Engine Characterization"
-          description="Built a full work-energy model of a compressed-air IC engine: transducer calibration, friction/flywheel inertia, stroke-resolved air-work/leakage, crank-angle injection timing."
-          image="projects/IC-Engine/cover.jpg"
-          tags={["Thermo", "Work-Energy", "York Regression", "MATLAB", "DAQ", "Optimization"]}
-          xlink="ME4056_ICEngine_Report3.pdf"
-        />
-        <ProjectCard
-          title="DC Motor System ID + PID Control"
-          description="Identified DC motor’s dynamics in time + frequency domains, mapped dead-zone and saturation limits, tuned P/PD/PID controllers in a non-linear Simulink model to meet specs."
-          image="projects/DC-Motor/cover.jpg"
-          tags={["Controls", "PID", "Frequency Response", "Simulink", "Nonlinear Modeling"]}
-          xlink="ME4056_SysId.01_Report_10.03.2025_rev0.pdf"
-        />
-        <ProjectCard
-          title="Tensile Test Rig Calibration"
-          description="Calibrated custom testing rig by deriving force-transducer and displacement-sensor calibrations, modeling rig compliance, and removing bias/noise. Verified the rig meets specs and proposed upgrades."
-          image="projects/Test-Rig/cover.jpg"
-          tags={["Calibration", "MATLAB", "Mechanical Testing", "Design Recommendations", "DAQ"]}
-          xlink="ME3057_TestRig_Report_A09B3T3_03052025.pdf"
-        />
-        <ProjectCard
           title="Racing Catamaran Structural + CFD Analysis (NX)"
           description="Parametric Siemens NX model of an International Tornado–style racing catamaran, with FEA load cases, mesh convergence, composite material selection, and CFD."
           image="projects/Catamaran/cover.jpg"
@@ -72,6 +51,27 @@ export default function ProjectsPage() {
           image="projects/DP3/cover.png"
           tags={["Machine Design", "Gear Design (AGMA)", "Bearing Life (L10)", "Fits & Tolerances"]}
           xlink="ME3180___DP3.pdf"
+        />
+        <ProjectCard
+          title="Compressed-Air IC Engine Characterization"
+          description="Built a full work-energy model of a compressed-air IC engine: transducer calibration, friction/flywheel inertia, stroke-resolved air-work/leakage, crank-angle injection timing."
+          image="projects/IC-Engine/cover.jpg"
+          tags={["Thermo", "Work-Energy", "York Regression", "MATLAB", "DAQ", "Optimization"]}
+          xlink="ME4056_ICEngine_Report3.pdf"
+        />
+        <ProjectCard
+          title="DC Motor System ID + PID Control"
+          description="Identified DC motor’s dynamics in time + frequency domains, mapped dead-zone and saturation limits, tuned P/PD/PID controllers in a non-linear Simulink model to meet specs."
+          image="projects/DC-Motor/cover.jpg"
+          tags={["Controls", "PID", "Frequency Response", "Simulink", "Nonlinear Modeling"]}
+          xlink="ME4056_SysId.01_Report_10.03.2025_rev0.pdf"
+        />
+        <ProjectCard
+          title="Tensile Test Rig Calibration"
+          description="Calibrated custom testing rig by deriving force-transducer and displacement-sensor calibrations, modeling rig compliance, and removing bias/noise. Verified the rig meets specs and proposed upgrades."
+          image="projects/Test-Rig/cover.jpg"
+          tags={["Calibration", "MATLAB", "Mechanical Testing", "Design Recommendations", "DAQ"]}
+          xlink="ME3057_TestRig_Report_A09B3T3_03052025.pdf"
         />
         <ProjectCard
           title="Rotor–Pulley Shaft Design (Fatigue + Deflection)"
