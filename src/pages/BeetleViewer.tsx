@@ -1,16 +1,17 @@
 import "@google/model-viewer";
+import { getImageUrl } from "../utils/utils";
 
-export default function 3DViewer() {
+export default function BeetleViewer() {
   return (
     <div className="mx-auto max-w-5xl p-6">
-      <h1 className="text-2xl font-bold text-white">3D Viewer</h1>
+      <h1 className="text-2xl font-bold text-white">Classic VW Beetle (NX)</h1>
       <p className="mt-2 text-slate-300">
-        Interactive 3D view (drag to rotate, scroll to zoom).
+        Drag to rotate, scroll to zoom.
       </p>
 
       <div className="mt-6 overflow-hidden rounded-xl border border-white/10 bg-white/5">
         <model-viewer
-          src="assets/projects/Beetle/beetle assembly.glb"
+          src={getImageUrl("projects/Beetle/beetle_assembly.glb")}
           camera-controls
           auto-rotate
           shadow-intensity="0.8"
