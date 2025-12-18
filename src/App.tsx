@@ -8,6 +8,7 @@ import PageWrapper from "./components/pageWrapper";
 import { useTransitionDirection } from "./hooks/useDirection";
 import Spotlight from "./components/spotlight";
 import TabSwitcher from "./pages/TabSwitcher";
+import BeetleViewer from "./pages/BeetleViewer";
 
 function App() {
   const location = useLocation();
@@ -55,6 +56,15 @@ function App() {
               </PageWrapper>
             }
           />
+          <Route
+            path="/projects/beetle"
+            element={
+              <PageWrapper direction={direction}>
+                <BeetleViewer />
+    </PageWrapper>
+  }
+/>
+
         </Routes>
       </AnimatePresence>
     </>
