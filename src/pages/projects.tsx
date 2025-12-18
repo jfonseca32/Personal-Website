@@ -39,7 +39,7 @@ export default function ProjectsPage() {
           xlink="ME4042 - Final Report.pdf"
         />
         <ProjectCard
-          title="Built-in 3D Viewer VW Beetle CAD"
+          title="Click-Me 3D Viewer VW Beetle CAD"
           description="CAD build of a classic VW Beetle using advanced NX surfacing + solid workflows."
           image="projects/Beetle/cover.png"
           tags={["Siemens NX", "Solid Modeling", "Surface Modeling", "Raster"]}
