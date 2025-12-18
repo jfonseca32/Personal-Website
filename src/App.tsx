@@ -61,6 +61,10 @@ function App() {
             element={
               <PageWrapper direction={direction}>
                 <BeetleViewer />
+              </PageWrapper>
+            }
+          />
+
     </PageWrapper>
   }
 />
