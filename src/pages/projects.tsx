@@ -43,7 +43,7 @@ export default function ProjectsPage() {
           description="CAD build of a classic VW Beetle using advanced NX surfacing + solid workflows."
           image="projects/Beetle/cover.png"
           tags={["Siemens NX", "Solid Modeling", "Surface Modeling", "Raster"]}
-          xlink="/public/beetle"
+          xlink="/projects/beetle"
         />
         <ProjectCard
           title="Geared Drive: Gear + Bearing Design (AGMA + L10)"
