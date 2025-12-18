@@ -28,7 +28,7 @@ export default function ProjectsPage() {
           title="Robotic Arm Inverse Kinematics with Machine Learning"
           description="Machine Learning pipeline for approximating joint angles given coordinates for 6 and 4-DOF redundant robot arms (Best Project Award)."
           image="projects/IK-ML/cover.png"
-          tags={["Robotic Manipulation", "Python", "Scikit-learn", "Machine Learning", "TensorFlow", "PyBullet"]}
+          tags={["Robotics", "Python", "Scikit-learn", "Machine Learning", "TensorFlow", "PyBullet"]}
           xlink="https://github.com/jfonseca32/Inverse-Kinematics-Approximation-with-ML"
         />
         <ProjectCard
@@ -77,7 +77,7 @@ export default function ProjectsPage() {
           title="Rotor–Pulley Shaft Design (Fatigue + Deflection)"
           description="Designed a rotor–pulley steel shaft for infinite life using Shigley methods and McMaster-Carr component selection."
           image="projects/DP2/cover.png"
-          tags={["Fatigue (Goodman)", "Shaft Design", "Stress Concentration", "Retaining Ring", "MATLAB"]}
+          tags={["Fatigue (Goodman)", "Shaft Design", "Stress Concentration", "MATLAB"]}
           xlink="ME3180___DP2.pdf"
         />
         <ProjectCard
