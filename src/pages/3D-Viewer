@@ -10,7 +10,7 @@ export default function 3DViewer() {
 
       <div className="mt-6 overflow-hidden rounded-xl border border-white/10 bg-white/5">
         <model-viewer
-          src="beetle assembly.glb"
+          src="assets/projects/Beetle/beetle assembly.glb"
           camera-controls
           auto-rotate
           shadow-intensity="0.8"
