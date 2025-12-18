@@ -28,7 +28,7 @@ export default function ProjectCard(props: ProjectCardData) {
       className="flex max-w-full flex-col rounded-lg border border-white/10 bg-white/5 shadow-md backdrop-blur transition hover:bg-white/10 hover:shadow-lg hover:ring-1 hover:ring-white/10"
     >
       {props.image && (
-        <div className="h-56 w-full overflow-hidden rounded-t-lg bg-white/5">
+        <div className="h-48 w-full overflow-hidden rounded-t-lg bg-white/5">
           <img
             src={getImageUrl(props.image)}
             alt={props.title}
