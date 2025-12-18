@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { getImageUrl } from "../utils/utils";
+import { useNavigate } from "react-router-dom";
 
 interface ProjectCardData {
   title: string;
@@ -16,11 +17,22 @@ interface TagDetails {
 
 export default function ProjectCard(props: ProjectCardData) {
   const [imageLoaded, setImageLoaded] = useState(false);
+  const navigate = useNavigate();
+
+  const isInternal = !!props.xlink && props.xlink.startsWith("/");
 
   return (
     <motion.a
       href={props.xlink}
-      rel="noopener noreferrer"
+      // Only apply these for external links
+      target={!isInternal ? "_blank" : undefined}
+      rel={!isInternal ? "noopener noreferrer" : undefined}
+      onClick={(e) => {
+        if (isInternal && props.xlink) {
+          e.preventDefault();      // prevent full page reload
+          navigate(props.xlink);   // SPA navigation
+        }
+      }}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
