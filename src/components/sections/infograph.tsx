@@ -1,26 +1,32 @@
 import ExperienceCard from "../experienceCard";
+import Button from "../button";
 
 export default function Infograph() {
   return (
-    <div className="z-10 flex flex-col pb-10 md:basis-1/2 md:pt-20">  
+    <div className="z-10 flex min-h-[100dvh] flex-col pb-10 md:basis-1/2 md:pt-20">
       {/* About Me */}
-      <div>
+      <section>
         <h1 className="top-0 z-50 rounded py-4 text-base font-bold uppercase tracking-widest text-slate-200">
           About Me
         </h1>
         <div className="mb-8">
           <AboutMe />
         </div>
-      </div>
-      
+      </section>
+
       {/* Experiences */}
-      <div>
+      <section>
         <h1 className="top-0 z-50 mb-4 rounded py-4 text-base font-bold uppercase tracking-widest text-slate-200">
           Experiences
         </h1>
         <div className="mb-8">
           <Experience />
         </div>
+      </section>
+
+      {/* Resume button pinned to bottom */}
+      <div className="mt-auto pt-8">
+        <Button text="Review Resume" xlink="/JPDF-Aug25-Resume.pdf" />
       </div>
     </div>
   );
