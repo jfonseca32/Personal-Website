@@ -19,7 +19,7 @@ function App() {
 
   return (
     <>
-      {/* Only show on homepage, only once per device, for 4s (handled inside component) */}
+      {/* Hint shows on homepage, only once per device*/}
       {location.pathname === "/" && <MobileHint />}
 
       <Spotlight />
