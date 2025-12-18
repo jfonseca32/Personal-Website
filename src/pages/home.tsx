@@ -6,10 +6,13 @@ import Button from "../components/button";
 
 export default function Home() {
   useDocumentTitle("Home | Joao Pedro Dudziak Fonseca");
+
   return (
+    <>
       <div className="fixed inset-0 hidden max-h-screen md:block">
         <Lanyard />
       </div>
+
       {/*
         <div className="fixed bottom-0 right-0 z-20 m-8 hidden lg:block">
           <ImageJackbox />
@@ -20,5 +23,6 @@ export default function Home() {
         <Hero></Hero>
         <Infograph></Infograph>
       </div>
+    </>
   );
 }
