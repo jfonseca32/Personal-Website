@@ -9,19 +9,22 @@ import { useTransitionDirection } from "./hooks/useDirection";
 import Spotlight from "./components/spotlight";
 import TabSwitcher from "./pages/TabSwitcher";
 import BeetleViewer from "./pages/BeetleViewer";
+import MobileHint from "./components/MobileHint";
 
 function App() {
   const location = useLocation();
   const direction = useTransitionDirection();
 
-  const showTabSwitcher = ["/", "/projects"].includes(
-    location.pathname,
-  );
+  const showTabSwitcher = ["/", "/projects"].includes(location.pathname);
 
   return (
     <>
+      {/* Only show on homepage, only once per device, for 4s (handled inside component) */}
+      {location.pathname === "/" && <MobileHint />}
+
       <Spotlight />
       {showTabSwitcher && <TabSwitcher />}
+
       <AnimatePresence mode="wait" initial={false}>
         <Routes location={location} key={location.pathname}>
           <Route
@@ -32,7 +35,7 @@ function App() {
               </PageWrapper>
             }
           />
-        
+
           <Route
             path="/projects"
             element={
@@ -41,7 +44,7 @@ function App() {
               </PageWrapper>
             }
           />
-        
+
           <Route
             path="/projects/beetle"
             element={
@@ -50,7 +53,7 @@ function App() {
               </PageWrapper>
             }
           />
-        
+
           <Route
             path="/under-construction"
             element={
@@ -59,7 +62,7 @@ function App() {
               </PageWrapper>
             }
           />
-        
+
           <Route
             path="*"
             element={
