@@ -32,18 +32,18 @@ export default function ProjectsPage() {
           xlink="https://jfonseca32.github.io/Inverse-Kinematics-Approximation-with-ML/"
         />
         <ProjectCard
+          title="(CLICK ME) VW Beetle CAD"
+          description="CAD build of a classic VW Beetle using advanced NX surfacing + solid workflows."
+          image="projects/Beetle/cover.png"
+          tags={["Siemens NX", "Solid Modeling", "Surface Modeling", "Raster"]}
+          xlink="/projects/beetle"
+        />
+        <ProjectCard
           title="Racing Catamaran Structural + CFD Analysis (NX)"
           description="Parametric Siemens NX model of an International Tornado–style racing catamaran, with FEA load cases, mesh convergence, composite material selection, and CFD."
           image="projects/Catamaran/cover.jpg"
           tags={["Siemens NX", "FEA", "CFD", "Composites", "Parametric CAD"]}
           xlink="ME4042 - Final Report.pdf"
-        />
-        <ProjectCard
-          title="Click-Me 3D Viewer VW Beetle CAD"
-          description="CAD build of a classic VW Beetle using advanced NX surfacing + solid workflows."
-          image="projects/Beetle/cover.png"
-          tags={["Siemens NX", "Solid Modeling", "Surface Modeling", "Raster"]}
-          xlink="/projects/beetle"
         />
         <ProjectCard
           title="Geared Drive: Gear + Bearing Design (AGMA + L10)"
