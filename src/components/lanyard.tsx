@@ -35,6 +35,7 @@ export default function Lanyard() {
       className="fixed inset-0 h-full w-full z-0"
       // Critical for mobile: prevents scroll/selection gestures fighting your drag
       style={{ touchAction: "none" }}
+      gl={{ alpha: true }}
       dpr={[1, 2]}
     >
       <ambientLight intensity={Math.PI} />
@@ -42,7 +43,7 @@ export default function Lanyard() {
         <Band />
       </Physics>
 
-      <Environment background blur={0.75}>
+      <Environment blur={0.75}>
         <Lightformer
           intensity={2}
           color="white"
