@@ -26,7 +26,7 @@ export default function Infograph() {
 
       {/* Resume button pinned to bottom */}
       <div className="mt-auto pt-8">
-        <Button text="View Resume" xlink="/JPDF-Aug25-Resume.pdf" />
+        <Button text="View Resume" xlink="/JPF-RESUME-JUNE26" />
       </div>
     </div>
   );
@@ -63,14 +63,18 @@ function Experience() {
         tags={[
           "Mechanical Engineering",
           "Vehicle Dynamics",
+          "NVH",
+          "Data Analysis",
+          "Simulation",
+          "Multi-Body Dynamics",
           "Python",
-          "C++",
-          "Experiment Design",
-          "Fluid Mechanics",
+          "Modelica",
+          "C/C++",
+          "Test Procedures",
           "PID",
         ]}
         dates="Jan 2026 - Jun 2026"
-        description=""
+        description="Developed the Data Analysis Toolbox (DAT) to analyze vehicle dynamics and simulation data."
         image="logos/tesla_logo.png"
         xlink="https://www.tesla.com"
       />
