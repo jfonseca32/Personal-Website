@@ -26,7 +26,7 @@ export default function Infograph() {
 
       {/* Resume button pinned to bottom */}
       <div className="mt-auto pt-8">
-        <Button text="View Resume" xlink="/JPF-RESUME-JUNE26" />
+        <Button text="View Resume" xlink="/JPF-RESUME-JUNE26.pdf" />
       </div>
     </div>
   );
